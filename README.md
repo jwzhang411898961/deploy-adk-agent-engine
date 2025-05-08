@@ -29,9 +29,16 @@ curl -sSL https://install.python-poetry.org | python3 -
 poetry install
 ```
 
+3a.optional
+```bash
+poetry env use python3.13 # Solve the warning: The currently activated Python version 3.9.12 is not supported by the project (>=3.12). Trying to find and use a compatible version.
+```
+
 4. Activate the virtual environment:
 ```bash
-source $(poetry env info --path)/bin/activate
+# source $(poetry env info --path)/bin/activate 
+source "$(poetry env info --path)/Scripts/activate"
+
 ```
 
 ## Configuration
