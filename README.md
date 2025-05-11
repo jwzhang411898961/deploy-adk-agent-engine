@@ -31,7 +31,8 @@ poetry install
 
 3a.optional
 ```bash
-poetry env use python3.13 # Solve the warning: The currently activated Python version 3.9.12 is not supported by the project (>=3.12). Trying to find and use a compatible version.
+poetry env use C:\Users\jwzha\AppData\Local\Programs\Python\Python312\python.exe # python 3.13 doesn't work because vertex ai can only support <= 3.12
+# poetry env use python3.13 # Solve the warning: The currently activated Python version 3.9.12 is not supported by the project (>=3.12). Trying to find and use a compatible version.
 ```
 
 4. Activate the virtual environment:
